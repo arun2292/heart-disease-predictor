@@ -30,9 +30,9 @@ tab1, tab2, tab3 = st.tabs(['📋 Individual Predict','📁 Bulk Predict','📊 
 model_options = {
     'Decision Tree( Accuracy: 80.97%)': 'DecisionTree.pkl',
     'Support Vector Machine( Accuracy: 84.22%)': 'SVM.pkl',
-    'Random Forest( Accuracy: 84.23%)': 'RandomForest.pkl',
+    'Random Forest( Accuracy: 83.69%)': 'RandomForest.pkl',
     'Logistic Regression( Accuracy: 85.86%)': 'LogisticRegression.pkl',
-    'Grid Random Forest( Accuracy: 89.57%)': 'gridRF.pkl'
+    'Grid Random Forest( Accuracy: 86.96%)': 'gridRF.pkl'
 }
 
 # ------------ INDIVIDUAL PREDICTION ------------
@@ -146,9 +146,9 @@ with tab3:
     data = {
         'Decision Tree': 80.97,
         'Logistic Regression': 85.86,
-        'Random Forest': 84.23,
+        'Random Forest': 83.69,
         'Support Vector Machine': 84.22,
-        'Grid Random Forest': 89.57
+        'Grid Random Forest': 86.96
     }
     df = pd.DataFrame(list(data.items()), columns=['Model', 'Accuracy'])
 
